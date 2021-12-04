@@ -1,0 +1,19 @@
+﻿<Window x:Class="juego_del_gato_wpf.Message"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:juego_del_gato_wpf"
+        mc:Ignorable="d"
+        Title="Message" Height="300" Width="600" WindowStyle="None" Background="#263238" ResizeMode="CanResizeWithGrip" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Name="lblMessage" VerticalAlignment="Bottom" HorizontalAlignment="Center" Foreground="White" FontSize="28" FontWeight="Bold">Message</Label>
+        <Image Grid.Row="1" Name="imgWinner" Source="/Resources/circle_white.png"></Image>
+        <Button Grid.Row="2"  Width="200" Height="50" FontSize="18" Background="Green" Foreground="White" BorderBrush="Black" BorderThickness="2" VerticalAlignment="Top" FontWeight="Bold" Name="btnClose" Click="btnClose_Click">Ok</Button>
+    </Grid>
+</Window>
